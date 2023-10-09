@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script>
+      let sumEven = 0;
+      let num = 0;
+      const modulus = num % 2;
+
+      function evenNumber() {
+        if (modulus === 0) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      for (num = 0; num <= 100; num++) {
+        if (evenNumber()) {
+          sumEven += num;
+          num++;
+        } console.log(sumEven);
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

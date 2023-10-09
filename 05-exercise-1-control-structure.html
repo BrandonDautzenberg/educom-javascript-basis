@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script>
+      let totalEven = 0;
+      let num = 0;
+      const modulus = num % 2;
+
+      for (num = 0; num <= 100; num++) {
+        if (modulus === 0) {
+          totalEven += num;
+          num++;
+        } else {
+          num++;
+        }
+      }
+      console.log(totalEven);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
