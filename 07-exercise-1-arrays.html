@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script>
+
+      let totalPrice = 0;
+      const shoppingCart = [5, 10, 15, 12, 8, 20]
+      const taxPercentage = 0.21;
+
+      shoppingCart.forEach( (value, index, array) => {
+        totalPrice += (value + (value * taxPercentage));
+      })
+      console.log(`Total price: $${totalPrice} (with tax)`);
+    </script>
+  </head>
+
+  <body>
+  </body>
+</html>
