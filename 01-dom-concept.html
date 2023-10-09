@@ -8,7 +8,6 @@
 </head>
 
 <body>
-  <div id = "output"></div>
   <script>
     let output; 
     // There is no need to give this a data type, JS is a scripting language and not a compiled language //
@@ -17,5 +16,9 @@
     output.innerHTML = "Hi there!";
     // The HTML element has a property called innerHTML, which is actually the content WITHIN that tag (even child tags). // 
   </script>
+  <div id = "output"></div>
+    <!-- Placing the script-tag before the DIV results in an empty document. 
+    the id "output" has not been assigned a value, and is therefore 'null'. The text 'Hi there' will not be displayed.-->
+
 </body>
 </html>
