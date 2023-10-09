@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script>
+      
+      const fruits = ["Apple", "Orange", "Apple", "Mango"];
+      const numbers = [4,9,16,25,29];
+
+      /// Helper function
+      const findOver18 = (item) => {
+        return item > 18;
+      }
+
+      /// indexOf
+      const a = fruits.indexOf("Apple");
+      const b = fruits.lastIndexOf("Apple");
+
+      /// find
+      const c = numbers.find(findOver18);
+      const d = numbers.findIndex(findOver18);
+      
+      console.log({ a: a, b: b, c: c, d: d});
+
+      // explanation 
+      // a --> the index of the first instance of "Apple" is [0]
+      // b --> the index of the last instance of "Apple" is [2]
+      // c --> the first number higher than 18 is displayed.
+      // d --> the first index number of the number higher than 18 is displayed. 
+      
+    </script>
+  </head>
+
+  <body>
+  </body>
+</html>

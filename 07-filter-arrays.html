@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script>
+      
+      const myFunction = (value, index, array) => {
+        return value > 18;
+      //// Returns all the values over 18 in the array
+      }
+      const numbers = [45, 4, 9, 16, 25]
+      const over18 = numbers.filter(myFunction);
+      console.log(over18);
+
+      //// or
+      const n = numbers.filter( value => value > 18);
+      console.log(over18, n);
+
+    </script>
+  </head>
+
+  <body>
+  </body>
+</html>
